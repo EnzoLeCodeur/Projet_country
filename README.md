@@ -23,7 +23,6 @@ Cette application affiche l'ensemble des pays du monde et leurs détails grâce 
 ### Ecran avec les détails du pays
 
 - Affiche les différentes informations sur la carte qui sont :
-  - Drapeau du pays
   - Nom du pays
   - Alpha Code du pays
   - Capital du pays
