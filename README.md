@@ -18,7 +18,7 @@ Cette application affiche l'ensemble des pays du monde et leurs détails grâce 
 
 - Affichage de la liste des pays 
 
-<img src="LesPays.jpg" alt="liste" width="250" class="centered">
+<img src="Countries.jpg" alt="liste" width="250" class="centered">
 
 ### Ecran avec les détails du pays
 
@@ -30,4 +30,4 @@ Cette application affiche l'ensemble des pays du monde et leurs détails grâce 
   - Sous-continent du pays
   - Population du pays
 
-<img src="Pays.jpg" alt="détail" width="250" class="centered">
+<img src="Country.jpg" alt="détail" width="250" class="centered">
