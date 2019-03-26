@@ -1,0 +1,43 @@
+package enzo.brembilla.projet_mobile;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+
+import java.util.List;
+
+import enzo.brembilla.projet_mobile.Model.Pays;
+
+public class MainActivity extends Activity {
+    private RecyclerView recyclerView;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager layoutManager;
+
+    private MainController controller;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        recyclerView = findViewById(R.id.my_recycler_view);
+
+        controller = new MainController(this);
+        controller.onStart();
+
+        // use this setting to
+        // improve performance if you know that changes
+        // in content do not change the layout size
+        // of the RecyclerView
+    }
+
+    public void showList(List<Pays> input){
+        recyclerView.setHasFixedSize(true);
+        // use a linear layout manager
+        layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+        // define an adapter
+        mAdapter = new MyAdapter(input, this);
+        recyclerView.setAdapter(mAdapter);
+    }
+}
